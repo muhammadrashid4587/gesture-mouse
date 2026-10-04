@@ -1,0 +1,12 @@
+[project]
+name = "gesture-mouse"
+version = "0.1.0"
+description = "Control an on-screen board with both hands, tracked by the webcam."
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    # 1.0.1 aborts on macOS arm64 ("Check failed: service_ Service is unavailable"); 1.0.0 works.
+    "mediapipe==1.0.0",
+    "numpy>=2.5.3",
+    "opencv-contrib-python>=5.0.0.93",
+]
